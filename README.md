@@ -1,15 +1,18 @@
 # Signal-Denoising-Using-Transformer-model
-🔍 Overview
+🔍 Overview:
 The Signal Denoising Transformer (DeT) is a deep learning model designed to remove noise from one-dimensional biosignals (e.g., EEG, EMG). By breaking the input sequence into fixed-length patches, embedding them, and applying multi-head self-attention across time, DeT learns long-range dependencies and accurately reconstructs the underlying clean waveform.
 
-🚀 Tools & Technologies
-Frameworks: PyTorch (modeling & training), NumPy (data handling), Matplotlib (visualization)
+🚀 Tools & Technologies:
+Frameworks: 
+
+PyTorch (modeling & training), NumPy (data handling), Matplotlib (visualization)
 
 Libraries: einops (patch embedding), tensorboardX (training logs), tqdm (progress bars)
 
 Hardware: NVIDIA GPUs with CUDA (accelerated training)
 
-📁 Files & Structure
+📁 Files & Structure:
+
 model.py
 
 Transformer block (stacked nn.TransformerEncoderLayer)
@@ -32,7 +35,7 @@ Metric functions: temporal RRMS, spectral RRMS, correlation coefficient
 
 Inference on held-out test set, loss tracking, waveform/spectrogram plots
 
-📈 Training & Testing
+📈 Training & Testing:
 Dataset:
 
 Clean EEG signals (EEG_all_epochs.npy) paired with synthetic or recorded noisy versions (EMG_all_epochs.npy)
@@ -67,7 +70,7 @@ Spectral RRMS: < 0.25
 
 Correlation Coefficient: increased from ~0.02 to ~0.88
 
-🌐 Real-World Applications
+🌐 Real-World Applications:
 
 Clinical EEG/EMG Denoising: Improves signal quality for brain–computer interfaces, epilepsy monitoring, sleep studies
 
