@@ -68,6 +68,7 @@ Spectral RRMS: < 0.25
 Correlation Coefficient: increased from ~0.02 to ~0.88
 
 🌐 Real-World Applications
+
 Clinical EEG/EMG Denoising: Improves signal quality for brain–computer interfaces, epilepsy monitoring, sleep studies
 
 Wearable Sensors: On-device noise suppression for portable health monitors (e.g., muscle fatigue or stress detection)
